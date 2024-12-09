@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculaotr.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <button id="bw">B</button>
+   <div class="all">
+    <div class="calculator">
+        <input type="text" id="display" placeholder="0">
+        <div class="key">
+            <div>
+               <button onclick="display.value = ''" id="clear">C</button>
+               <button onclick="del()" id="delete"><i class='bx bx-eraser'></i></button>
+               <button onclick="keys('%')" class="operator">%</button>
+               <button onclick="keys('/')" class="operator">/</button>
+            </div>
+            <div>
+               <button onclick="keys('7')">7</button>
+               <button onclick="keys('8')">8</button>
+               <button onclick="keys('9')">9</button>
+               <button onclick="keys('*')" class="operator">×</button>
+            </div>
+            <div>
+               <button onclick="keys('4')">4</button>
+               <button onclick="keys('5')">5</button>
+               <button onclick="keys('6')">6</button>
+               <button onclick="keys('-')" class="operator">-</button>
+            </div>
+            <div>
+               <button onclick="keys('1')">1</button>
+               <button onclick="keys('2')">2</button>
+               <button onclick="keys('3')">3</button>
+               <button onclick="keys('+')" class="operator">+</button>
+            </div>
+               <button onclick="keys('0')">0</button>
+               <button onclick="keys('.')" class="operator">.</button>
+               <button onclick="calculate()" id="equalsTo">=</button>
+        </div>
+    </div>
+   </div>    
+    <script src="calculator.js"></script>
+</body>
+</html>
